@@ -1,2 +1,3 @@
 This is the test file for Git&Git Hub exercise! Yay!
-OUUUUU
+I'm trying :-D Something something something
+YOOOO
