@@ -1,2 +1,2 @@
 This is the test file for Git&Git Hub exercise! Yay!
-I'm trying :-D
+I'm trying :-DSomething something something
