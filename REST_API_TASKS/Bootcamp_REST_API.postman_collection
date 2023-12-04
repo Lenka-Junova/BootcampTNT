@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "0a3a7e8b-04ee-4e31-8d47-75c302f16992",
+		"name": "Bootcamp_REST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30535959"
+	},
+	"item": [
+		{
+			"name": "Get all posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://jsonplaceholder.typicode.com/posts"
+			},
+			"response": []
+		},
+		{
+			"name": "Get one post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://jsonplaceholder.typicode.com/posts/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Get comments in posts post id.1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://jsonplaceholder.typicode.com/posts/1/comments"
+			},
+			"response": []
+		},
+		{
+			"name": "Get comments with post id.1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/comments?postId=1",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"comments"
+					],
+					"query": [
+						{
+							"key": "postId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get posts user id.1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts?userId=1",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post new post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"userId\": 5,\r\n        \"id\": 101,\r\n        \"title\": \"avada kedavra\",\r\n        \"body\": \"oh well, that's life, karma is for free y'all\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://jsonplaceholder.typicode.com/posts"
+			},
+			"response": []
+		},
+		{
+			"name": "Updating post user id.1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"userId\": 1,\r\n        \"id\": 7,\r\n        \"title\": \"magnam facilis autem\",\r\n        \"body\": \"bla bla bla bla that's all folks\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://jsonplaceholder.typicode.com/posts/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Updating title",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"title\": \"tra la la\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://jsonplaceholder.typicode.com/posts/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://jsonplaceholder.typicode.com/posts/1"
+			},
+			"response": []
+		}
+	]
+}

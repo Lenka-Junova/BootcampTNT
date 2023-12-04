@@ -1,0 +1,16 @@
+Solutions documentation: https://documenter.getpostman.com/view/30535959/2s9YXib2jo
+
+Tasks
+Create requests with these parameters:
+GET + /posts
+GET + /posts/1
+GET + /posts/1/comments
+GET + /comments?postId=1
+GET + /posts?userId=1
+POST + /posts
+PUT + /posts/1
+PATCH + /posts/1
+DELETE + /posts/1
+
+
+
