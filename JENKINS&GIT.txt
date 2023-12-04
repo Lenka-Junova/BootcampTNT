@@ -1,0 +1,23 @@
+GIT&GITHUB TASKS:
+-create GitHub repository
+-clone it to local repository with GitBash
+-upload some default to master
+-create new branch, make changes and simulate merge conflict, solve it  
+-repeat previous step, except this time make pull request, note its hyperlink
+-delete branch both localy and on server
+-try to get new commit (that was made in master) into the new branch - git cherry-pick
+-create readme file in root of repository (try various format options)
+-set .gitignore for jpg and png pictures
+-set a tag to some commit
+-(optional) - set .gitconfig to accept .txt files as binary. Try to change txt file and check what GIT sees
+
+JENKINS TASKS:
+- use company's testlab Jenkins, create new freestyle job with name "TechnicalSkills_NameSurname"
+Specifics:
+-it runs every day at 10 am (CRON)
+-has two string parameters ENV and LANG 
+-download your GIT repository
+-delete workspace before each build
+-after 5 builds or 10 days, the results will delete
+-execute shell with directory and new file output.log (content 2 created parameters and some text)
+-archive as artefact
