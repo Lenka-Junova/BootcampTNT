@@ -1,0 +1,73 @@
+XPATH
+Máme následující vzorové XML (jednoduchá knihovna)
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bookstore>
+
+<book category="cooking">
+
+  <title lang="en">Everyday Italian</title>
+
+  <author>Giada De Laurentiis</author>
+
+  <year>2005</year>
+
+  <price>30.00</price>
+
+</book>
+<book category="children">
+
+  <title lang="en">Harry Potter</title>
+
+  <author>J K. Rowling</author>
+
+  <year>2005</year>
+
+  <price>29.99</price>
+
+</book>
+<book category="web">
+
+  <title lang="en">XQuery Kick Start</title>
+
+  <author>James McGovern</author>
+
+  <author>Per Bothner</author>
+
+  <author>Kurt Cagle</author>
+
+  <author>James Linn</author>
+
+  <author>Vaidyanathan Nagarajan</author>
+
+  <year>2003</year>
+
+  <price>49.99</price>
+
+</book>
+<book category="web">
+
+  <title lang="en">Learning XML</title>
+
+  <author>Erik T. Ray</author>
+
+  <year>2003</year>
+
+  <price>39.95</price>
+
+</book>
+</bookstore>
+
+Úkoly:
+1.Pomocí jakého xpath získáme názvy knih, které jsou v kategorii "web" ?
+2.Xpath, který vrátí všechny ceny, které jsou větší než 35
+3.Jaký Xpath použiju, pokud bych chtěl, aby výsledek byl: "Kurt Cagle"
+4.Jak získám počet knih z roku 2005?
+
+Použit: http://xpather.com/
+Řešení:
+1. //book[@category="web"]     Elements found 2
+2. //book[price>35]            Elements found 2
+3. //book[@category="web"][1]/author[3]   Elements found 1
+4. //book[sum(year=2005)]       Elements found 2
+
